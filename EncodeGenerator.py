@@ -8,12 +8,10 @@ from firebase_admin import db
 from firebase_admin import storage
 
 
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate("serviceAccountKey.json") #path of the credential file
 firebase_admin.initialize_app(cred,{
-    'databaseURL':"https://lambda-13cd9-default-rtdb.firebaseio.com/",
-     'storageBucket':"lambda-13cd9.appspot.com"
+    'databaseURL':"#"
 })
-
 #importing the student images
 folderPath = 'Images'
 PathList = os.listdir(folderPath)

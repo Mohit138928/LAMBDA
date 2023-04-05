@@ -2,10 +2,9 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate("serviceAccountKey.json") #path of the credential file
 firebase_admin.initialize_app(cred,{
-    'databaseURL':"https://lambda-13cd9-default-rtdb.firebaseio.com/",
-     'storageBucket':"lambda-13cd9.appspot.com"
+    'databaseURL':"#"
 })
 
 ref = db.reference('Students')
